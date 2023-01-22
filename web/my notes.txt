@@ -1,0 +1,31 @@
+npm vite@latest
+npm install
+
+npm install -d tailwindcss postcss autoprefixer
+
+/*
+
+    tailwindcss: plugin of postcss
+    postcss: tasck automatization
+    autoprefixer: tool that add browser prefixes
+
+*/
+
+npx tailwindcss init -p //create postcss config 
+
+//icons
+npm i phosphor-react
+
+//radix-ui - acessibilidade. p pessoas com defenciencia visual por exemplo e atalhos de teclado
+
+
+//to use if in classeName
+npm i clsx
+
+
+npm i axios
+
+/ *** EXTRAS ***/
+//autenticação: firebase; Auth0
+//notificações browser: push (native) / service workers
+//public profile

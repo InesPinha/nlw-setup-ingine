@@ -1,0 +1,51 @@
+ npm init -y (começar node)
+ npm i fastify  //fastfy - replace express. Better suport and preformace
+ npm i typescript -D
+ npx tsc --init (typescript init)
+
+ //change "target": "es2020" in tsconfig.json to recent version beacouse node already supports
+
+ npm i tsx -d //allow run typescript
+
+to run - npm run dev - change on package.json:
+"scripts": {
+    "dev": "tsx watch src/server.ts" //watch - show changes
+},
+
+
+//CORS - securaty mecanism that allowes app to access - I can configure witch address can access
+npm i @fastify/cors
+
+
+//ORM - Prisma
+
+npm i -d prisma
+npm i @prisma/client
+npx prisma init --datasource-provider SQLite // if mysql consider use docker
+//prisma extenssion must be install in order to proper hilight
+npx prisma migrate dev //to cretae migration
+
+npx prisma studio //open database
+
+npm i -D prisma-erd-generator @mermaid-js/mermaid-cli //diagrams
+npx prisma generate
+
+//seed - to have data - https://www.prisma.io/docs/guides/database/seed-database
+//on package.json
+"prisma": {
+  "seed": "tsx prisma/seed.ts"
+},
+npx prisma db seed
+
+
+//zod - liberary to validate requests
+npm i zod
+
+npm install dayjs
+
+
+
+
+
+
+https://discordapp.com/channels/327861810768117763/1061002370164740196/1065687895458979910
